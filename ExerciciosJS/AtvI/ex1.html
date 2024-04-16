@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordenar Valores</title>
+</head>
+<body>
+    <h2>Ordenar Valores</h2>
+    <script>
+        function ordenarValores() {
+            let valores = [];
+            for (let i = 0; i < 5; i++) {
+                let valor = parseFloat(prompt(`Digite o ${i+1}º valor:`));
+                valores.push(valor);
+            }
+            valores.sort(function(a, b) {
+                return a - b;
+            });
+            alert("Valores em ordem crescente: " + valores);
+        }
+
+        ordenarValores();
+    </script>
+</body>
+</html>
